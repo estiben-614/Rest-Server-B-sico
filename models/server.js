@@ -7,7 +7,7 @@ export class Server{
     constructor(){
         //Cada vez que se crea una clase server se ejecutan estas variables
         this.app= express()
-        this.port = process.env.PORT
+        this.port = process.env.PORT || 3000
 
         this.usuariosPath='/api/usuarios'
         //Middlewares : Funciones que se van a levantar cuando se ejecute el servidor 
